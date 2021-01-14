@@ -1,13 +1,246 @@
 body {
-  margin: 0;
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+.nav{
+  font-size: 2.5vw;
+  margin: 20px 0;
+}
+.nav-link{
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  border-bottom: dotted;
+  border-width: 3px;
+   border-color: rgb(206, 205, 205);
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  text-align: left;
+  padding: 2px 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+li a:hover {
+  background-color: #f7f5f5;
+}
+.Header{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size:4vw;
+  font-weight: 300;
+}
+.card{
+  margin: 10px;
+  margin-top: 20px;
+  border-bottom: solid;
+  border-width: 3px;
+   border-color: rgb(206, 205, 205);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.roleCard{
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-bottom: 5px;
+/* text-align: left; */
+}
+.coatOfArms{
+  /* width: 10%; */
+  padding-left: 5px;
+  width: 3%;
+  height: 3%;
+  /* float: left; */
+ margin-left:  5px;
+  border-left-style: solid;
+  border-width: 5px;
+  border-color: rgb(158, 4, 4);
+}
+
+.role{
+  font-size: 2.3vw;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.infoCard{
+  margin-left: 20px;
+}
+.body1{
+  font-weight: 500;
+  font-size: 2.3vw;
+  color: black;
+}
+.bodyContent{
+  font-weight: 250;
+  font-size: 2.4vw;
+}
+.extra-content{
+  margin-top: 10px;
+  padding: 0 20px;
+}
+.body2{
+  font-weight: 250;
+  font-size: 2.2vw;
+  text-align: start;
+  width: 45%;
+}
+.web {
+  color: rgb(117, 117, 207);
+  text-decoration: none;
+  font-weight: 250;
+  font-size: 2.2vw;
+}
+.read-more{
+  color: rgb(117, 117, 207);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.7vw;
+  outline: none;
+  box-shadow: none;
+}
+.read{
+  margin-left: 20px;
+  outline: none;
+  box-shadow: none;
+}
+a:hover {
+  color: rgb(49, 51, 160);
+}
+.web:visited {
+  color: rgb(24, 80, 24);
+}
+/* .address{
+  margin-bottom: 10px;
+  font-size: 3vw;
+  font-weight: 300;
+} */
+.marginBottom{
+   margin-bottom: 20px;
+}
+
+
+
+/*CARD2*/
+
+.Header2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 240;
+}
+.subHeader{
+  font-size: 3vw;
+  font-weight: 240;
+}
+.main{
+  margin: 10.5%;
+  margin-top: 50px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.card2{
+  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+.adminTitle{
+  font-weight: 400;
+   font-size: 2.5vw;
+}
+.bodyContent2{
+   font-size: 2.4vw;
+  font-weight: 250;
+}
+
+.edit{
+  text-decoration: none;
+  color: #fff;
+  font-size: 90%
+}
+.edit:hover{
+  color: #fff;
+}
+.editButton{
+  background-color: rgb(20, 59, 20);
+  padding: 0.5% 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-color: black;
+  border-radius: 10px;
+  outline: none;
+  margin-right: 5px;
+}
+.editButton:hover{
+  background-color: rgb(31, 112, 31);
+  padding:0.5% 5.1%;
+}
+.deleteButton{
+  background-color: rgb(116, 6, 12);
+  color: #fff;
+  padding: 0.5% 5%;
+  margin-left: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-color: black;
+  border-radius: 10px;
+  outline: none;
+}
+.deleteButton:hover{
+  background-color: rgb(160, 19, 26);
+  color: #fff;
+  padding: 0.5% 5.1%;
+}
+.createButton{
+  left: auto;
+  right: auto;
+   background-color: rgb(24, 80, 24);
+  padding: 0.5% 5%;
+  color: #f7f5f5;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border-color: black;
+  border-radius: 15px;
+  outline: none;
+}
+
+
+/*FORM*/
+form{
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+input{
+  width: 50vw;
+  padding: 0 0;
+   margin: 0.2rem;
+   border-top: 0;
+   border-right: 0;
+   border-left: 0;
+  border-radius: 2px;
+  font-size: 2rem;
+  font-weight: 300;
+  outline: none;
 }
