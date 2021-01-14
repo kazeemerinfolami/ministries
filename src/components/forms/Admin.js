@@ -66,7 +66,7 @@ function CreateData() {
                 website: "",
                 button: "Created",
             });
-            window.location.reload(false)
+            // window.location.reload(false)
             toast(res);
         }).catch((err) => {
             if (err.response) {
@@ -101,7 +101,7 @@ function CreateData() {
             url: `https://ministrybackend.herokuapp.com/api/v1/ministry/${userId}`,
         }).then((res) => {
             toast("DELETED SUCESSFULLY");
-            window.location.reload(false)
+            // window.location.reload(false)
         }).catch((err) => {
             if (err.response) {
                 toast.error("ERROR DELETING", err.message);
